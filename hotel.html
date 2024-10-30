@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Happy Travel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="library/fontawesome/css/fontawesome.css ">
+    <link rel="stylesheet" href="library/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="library/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="hotel.css">
+    
+</head>
+<body>
+    <div>
+        <div id="nav">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><b>Happy Travel</b></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item me-3">
+                                <a class="nav-link " href="/index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item me-3"> 
+                                <a class="nav-link " href="/index.html#bus">Bus</a>
+                            </li>
+                            <li class="nav-item me-3"> 
+                                <a class="nav-link active" href="/index.html#hotel">Hotel</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="/index.html#about">About</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="/index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container p-3 mx-auto">
+                <form class="hotel-card">
+                    <div class="card">
+                        <h5 class="card-header p-3">
+                            Search Hotel
+                        </h5>
+                        <div class="row card-body">
+                            <div class="col-12 col-md-6 col-lg-12 mt-4 mb-4 d-flex flex-column flex-sm-row align-items-left justify-content-left">
+                                <div class="me-3">
+                                    <input type="radio" class="form-check-input" id="local" name="travellerType" value="Local">
+                                    <label class="form-check-label me-3" for="local">Local</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="form-check-input" id="foreign" name="travellerType" value="Foreign">
+                                    <label class="form-check-label" for="foreign">Foreigner</label>
+                                </div>
+                            </div>
+                
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="dropdown w-100">
+                                    <input class="form-control dropdown-toggle" type="text" id="dropdownMenuButton1" placeholder="Where To Go?" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <ul class="dropdown-menu w-100 p-3" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                            <input type="text" class="form-control" id="dropdownSearch1" placeholder="Search...">
+                                        </li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 4</a></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <input type="text" class="form-control" name="datefilter" placeholder="Check-in - Check-out" />
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 mb-4 room-input d-flex align-items-center justify-content-center">
+                                <button id="minusBtn" type="button" class="btn btn-outline-secondary">−</button>
+                                <span id="roomCount" class="mx-2">1 - Room</span>
+                                <button id="plusBtn" type="button" class="btn btn-outline-secondary">+</button>
+                            </div>
+                
+                            <div class="col-12 col-lg-3 mb-4">
+                                <button type="button" class="btn green-bg text-warning fw-bold w-100">Search Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>  
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-12 col-md-3">
+                    <div class="card mb-2">
+                        <div class="card-header">
+                            Sorting Price
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <input type="radio" class="form-check-input" id="local" name="travellerType" value="Local">
+                                <label class="form-check-label me-3" for="local"><small>Lowest First</small></label> 
+                            </div><br>
+                            <div>
+                                <input type="radio" class="form-check-input" id="local" name="travellerType" value="Local">
+                            <label class="form-check-label me-3" for="local"> <small>Highest First</small></label>
+                            </div><br>
+                        </div>
+                    </div> 
+                    <div class="card mb-2">
+                        <div class="card-header">
+                            Price Range
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <input type="radio" class="form-check-input" id="local" name="travellerType" value="Local">
+                                <label class="form-check-label me-3" for="local"><small>Below 50000 MMK</small></label> 
+                            </div><br>
+                            <div>
+                                <input type="radio" class="form-check-input" id="local" name="travellerType" value="Local">
+                            <label class="form-check-label me-3" for="local"><small>Below 100000 MMK</small></label>
+                            </div><br>
+                            <div>
+                                <input type="radio" class="form-check-input" id="local" name="travellerType" value="Local">
+                                <label class="form-check-label me-3" for="local"><small>Below 150000 MMK</small></label>
+                            </div><br>
+                            <div>
+                                <input type="radio" class="form-check-input" id="local" name="travellerType" value="Local">
+                                <label class="form-check-label me-3" for="local"><small>Below 200000 MMK</small></label>
+                            </div><br>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class=" col-12 col-md-4">
+                                    <img src="travel-photo/hotel/holiday.jpg" class="hotel-img img-fluid" alt="hotel-img">
+                                </div>                               
+                                <div class="col-12 col-md-8 d-flex flex-column">
+                                    <p class="mb-1" style="font-size: 1rem;">Holiday Pier Hotel</p>
+                                    <small><i class="fa-solid fa-location-dot text-secondary"></i> Pyigitagon</small>
+                                    <small class="mt-1">
+                                        <i class="fa-solid fa-check text-secondary"></i> 
+                                        24 hr Electricity, Bar, Buffet Breakfast, Car Parking, Concierge, Elevator, Free Wifi, Front Desk, Laundry Service, Pool, Security Guard, Spa
+                                    </small>
+                                </div>                                
+                                <div class="col-12 mt-3 d-flex justify-content-end">
+                                    <div class="text-end">
+                                        <span class="text-success" style="font-size: 1rem;">90000 MMK</span><br>
+                                        <small>Starting From (1 room / night)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class=" col-12 col-md-4">
+                                    <img src="travel-photo/hotel/dreamhill.jpg" class="hotel-img img-fluid" alt="hotel-img">
+                                </div>                               
+                                <div class="col-12 col-md-8 d-flex flex-column">
+                                    <p class="mb-1" style="font-size: 1rem;">Dream Hill Inn -Mandalay</p>
+                                    <small><i class="fa-solid fa-location-dot text-secondary"></i> Maha Aungmye</small>
+                                    <small class="mt-1">
+                                        <i class="fa-solid fa-check text-secondary"></i> 
+                                        Concierge, Free Wifi, Front Desk, Security Guard                                    
+                                    </small>
+                                </div>                                
+                                <div class="col-12 mt-3 d-flex justify-content-end">
+                                    <div class="text-end">
+                                        <span class="text-success" style="font-size: 1rem;">32000 MMK</span><br>
+                                        <small>Starting From (1 room / night)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class=" col-12 col-md-4">
+                                    <img src="travel-photo/hotel/hotelmandalay.jpg" class="hotel-img img-fluid" alt="hotel-img">
+                                </div>                               
+                                <div class="col-12 col-md-8 d-flex flex-column">
+                                    <p class="mb-1" style="font-size: 1rem;"> Hotel Mandalay</p>
+                                    <small><i class="fa-solid fa-location-dot text-secondary"></i> University of Medicine Mandalay - 0.5 miles</small>
+                                    <small class="mt-1">
+                                        <i class="fa-solid fa-check text-secondary"></i> 
+                                        24 hr Electricity, Bar, Buffet Breakfast, Business Center, Car Parking, Concierge, Elevator, Free Wifi, Front Desk, Laundry Service, Security Guard                                    </small>
+                                </div>                                
+                                <div class="col-12 mt-3 d-flex justify-content-end">
+                                    <div class="text-end">
+                                        <span class="text-success" style="font-size: 1rem;">150000 MMK</span><br>
+                                        <small>Starting From (1 room / night)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+        <div class="container-fluid green-bg">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-3 m-3">
+                    <h3 class="text-warning fw-bolder">Happy Travel</h3><br>
+                    <p class="text-white">Serve with love.<br>Thanks for choosing us. <br>Enjoy your Travel Plan with us.</p>
+                    <p class="text-warning"><i class="fa-solid fa-at"></i><a href="mailto:someone@example.com" class="text-decoration-none text-warning">: happytravel@gmail.com</a></p>
+                </div>
+                <div class="col-12 col-md-3 m-3 p-2">
+                    <h5 class="mt-3 text-warning fw-bold mb-4">QUICK LINKS</h5>
+                    <a href="/index.html#home" class="ft-link">Home</a><br>
+                    <a href="#bus" class="ft-link">Choose Bus</a><br>
+                    <a href="/index.html#hotel" class="ft-link">Choose Stay</a><br>
+                    <a href="/index.html#about" class="ft-link">About</a><br>
+                    <a href="/index.html#contact" class="ft-link">Contact Us</a>
+                </div>
+                <div class="col-12 col-md-3 m-3 p-2">
+                    <h5 class="mt-3 text-warning fw-bold mb-4">LEGAL</h5>
+                    <a href="#" class="ft-link">Terms & Conditions</a><br>
+                    <a href="#" class="ft-link">Privacy Policy</a><br>
+                    <p class="text-warning mt-4">
+                        <a href="#" class="text-warning"><i class="fa-solid fa-square-phone ft-icon"></i></a>
+                        <a href="#" class="text-warning"><i class="fa-brands fa-facebook-messenger ft-icon"></i></a>
+                        <a href="#" class="text-warning"><i class="fa-brands fa-viber ft-icon"></i></a>
+                        <a href="#" class="text-warning"><i class="fa-brands fa-telegram ft-icon"></i></a>
+                    </p>
+                </div>
+            </div>
+            <hr style="height:3px">
+            <footer class="text-center pb-4">
+                <small class="text-white">Copyright © Happy Travel. 2024 All Rights Reserved</small>
+            </footer>
+        </div>   
+    </div>
+</body>
+<script src="library/jquery/jquery.js"></script>
+<script src="library/momentjs/moment.min.js"></script>
+<script src="library/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="library/fontawesome/js/fontawesome.js"></script>
+<script src="library/fontawesome/js/solid.js"></script>
+<script src="library/fontawesome/js/brands.js"></script>
+<script src="library/daterangepicker/daterangepicker.js"></script>
+</html>

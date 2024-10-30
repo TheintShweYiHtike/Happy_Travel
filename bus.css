@@ -1,0 +1,50 @@
+
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.navbar{
+    background-color:#004c4c;
+}
+.navbar .navbar-brand{
+    color: #FFD700;
+    font-size: 1.7rem;
+}      
+.navbar .navbar-nav .nav-link{
+    color: #FFD700;
+}
+.navbar .nav-link:hover {
+    color: #FFA500 !important;
+}
+.navbar .nav-link.active {
+    color: #FFA500 !important;
+    background-color: #077070; 
+    font-weight: bold; 
+    border-radius: 5px; 
+}
+.green-bg{
+    background-color:#004c4c;
+}
+.bus-img{
+    height: 40px;
+    object-fit: cover;
+}
+.ft-icon{
+    font-size: 25px;
+    margin-inline-end: 7px;
+}
+.ft-icon:hover{
+    color: #7d7b75;
+}
+.ft-link{
+    text-decoration: none;
+    color: white;
+}
+.ft-link:hover{
+    color: #FFD700;
+}

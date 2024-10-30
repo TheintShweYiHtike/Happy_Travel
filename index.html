@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Happy Travel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="library/fontawesome/css/fontawesome.css ">
+    <link rel="stylesheet" href="library/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="library/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div>
+        <div id="home">
+            <div id="nav">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#"><b>Happy Travel</b></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item me-3">
+                                    <a class="nav-link active" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item me-3"> 
+                                    <a class="nav-link" href="#bus">Bus</a>
+                                </li>
+                                <li class="nav-item me-3"> 
+                                    <a class="nav-link" href="#hotel">Hotel</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container-fluid home d-flex align-items-center justify-content-center text-center position-relative">
+                <div class="overlay position-absolute w-100 h-100"></div>
+                <div class="text-white position-relative z-index-1">
+                    <h1 class="display-4 mb-4">Welcome from Happy Travel</h1>
+                    <p class="lead mb-4">Explore the beauty of Myanmar with us!<br>
+                        Enjoy hassle-free booking for buses and hotels.<br>
+                        Let us help you create unforgettable memories.
+                    </p>
+                    <a href="#bus" class="btn btn-success btn-lg me-3">Choose Ticket</a>
+                    <a href="#hotel" class="btn btn-light btn-lg">Book Hotel</a>
+                </div>
+            </div>
+        </div>        
+        <div class="container-fluid  bus-bg" id="bus">
+            <div class="d-flex align-items-center justify-content-center py-5">
+                <h2 class="text-center text-warning">Easily Obtain Your Bus Tickets for Exploring Myanmar Online</h2>
+            </div>
+            <div class="row py-5">
+                <div class="col-md-1 d-none d-md-block"></div>
+                <div class="col-md-5 col-12 text-md-start mt-5 d-flex align-items-center justify-content-center">
+                    <img src="travel-photo/logo/tourbus.png" class="img-fluid rounded" alt="Travel Image">
+                </div>
+                
+                <div class="col-md-1 d-none d-md-block"></div>
+                <div class="col-md-4 col-12">
+                    <form>
+                        <h5 class="m-3 text-white">
+                            Search Trip
+                        </h5>
+                        <div class="card p-4 m-3">   
+                            <div class="form-group mb-4">
+                                <input class="form-control" type="text" placeholder="From" required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <input class="form-control" type="text" placeholder="To" required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="date" class="form-control" placeholder="Departure" required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="number" class="form-control" value="1" min="1" max="4" required>
+                            </div>
+                            <div class="mb-4">
+                                <input type="radio" id="local" name="travellerType" value="Local" required>
+                                <label class="me-3" for="local">Local</label>
+                                <input type="radio" id="foreign" name="travellerType" value="Foreign" required>
+                                <label for="foreign">Foreign</label>
+                            </div>
+                            <a href="bus.html" class="btn green-bg text-warning fw-bold w-100">Search Now</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-1 d-none d-md-block"></div>
+            </div>
+        </div>
+              
+        <div class="container-fluid hotelbg" id="hotel">
+            <div class="d-flex align-items-center justify-content-center" style="height: 140px;">
+                <h2 class="text-center" style="color: #FFD700;">Book your Myanmar stay smoothly through online services</h2>
+            </div>
+            <div class="container p-5 mb-5 mx-auto rounded bg-white">
+                <form class="card hotel-card px-3 py-4">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-12 mt-4 mb-4 d-flex flex-column flex-sm-row align-items-left justify-content-left">
+                            <div class="me-3">
+                                <input type="radio" class="form-check-input" id="local" name="travellerType" value="Local">
+                                <label class="form-check-label me-3" for="local">Local</label>
+                            </div>
+                            <div>
+                                <input type="radio" class="form-check-input" id="foreign" name="travellerType" value="Foreign">
+                                <label class="form-check-label" for="foreign">Foreigner</label>
+                            </div>
+                        </div>
+            
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="dropdown w-100">
+                                <input class="form-control dropdown-toggle" type="text" id="dropdownMenuButton1" placeholder="Where to go?" data-bs-toggle="dropdown" aria-expanded="false">
+                                <ul class="dropdown-menu w-100 p-3" aria-labelledby="dropdownMenuButton1">
+                                    <li><input type="text" class="form-control" id="dropdownSearch1" placeholder="Search..."></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Option 4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <input type="text" class="form-control" name="datefilter" placeholder="Check-in - Check-out" />
+                        </div>
+            
+                        <div class="col-12 col-md-6 col-lg-3 mb-4 room-input d-flex align-items-center justify-content-center">
+                            <button id="minusBtn" type="button" class="btn btn-outline-secondary">−</button>
+                            <span id="roomCount" class="mx-2">1 - Room</span>
+                            <button id="plusBtn" type="button" class="btn btn-outline-secondary">+</button>
+                        </div>
+            
+                        <div class="col-12 col-lg-3 mb-4">
+                            <a href="hotel.html" class="btn green-bg text-warning fw-bold w-100">Search Hotel</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="container-fluid px-5">
+                <div class="row">
+                        <div class="col-6 col-md-3 mb-4">
+                            <div class="card">
+                                <img src="travel-photo/bgan.jpg" class="city-card" alt="Image 1">
+                                <div class="txtonimg">
+                                    <p class="card-title">Bagan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <div class="card">
+                                <img src="travel-photo/ygn1.jpg" class="city-card" alt="Image 3">
+                                <div class="txtonimg">
+                                    <p class="card-title">Yangon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <div class="card">
+                                <img src="travel-photo/mdy.jpg" class="city-card" alt="Image 2">
+                                <div class="txtonimg">
+                                    <p class="card-title">Mandalay</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <div class="card">
+                                <img src="travel-photo/inlay.jpg" class="city-card" alt="Image 4">
+                                <div class="txtonimg">
+                                    <p class="card-title">Inle Lake</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="container-fluid about-bg" id="about">
+            <div class="container-fluid about">
+                <div class="d-flex align-items-center justify-content-center mb-5" style="height: 100px;">
+                    <h2 class="text-center">About Us</h2>
+                </div>
+                <div class="container mt-4">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-xxl-1"></div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xxl-2 mb-4">
+                            <div class="card text-center border border-success info-card">
+                                <div class="icon-bg d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-credit-card card-icon"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Fast Payment</h5>
+                                    <p class="card-text">Pay with VISA, MASTER, MPU, WaveMoney, CBPay, KBZPay and MABPay.</p>
+                                    <a href="aboutus.html" class="btn btn-outline-success rounded-pill">More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xxl-2 mb-4">
+                            <div class="card text-center border border-success info-card">
+                                <div class="icon-bg d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-clock card-icon"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Reduce time</h5>
+                                    <p class="card-text">Online booking simplifies scheduling, reducing time and effort needed.</p>
+                                    <a href="aboutus.html" class="btn btn-outline-success rounded-pill">More <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xxl-2 mb-4">
+                            <div class="card text-center border border-success info-card">
+                                <div class="icon-bg d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-bus card-icon"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Bus Operator</h5>
+                                    <p class="card-text">Choose from various bus operators covering many destinations.</p>
+                                    <a href="aboutus.html" class="btn btn-outline-success rounded-pill">More  <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xxl-2 mb-4">
+                            <div class="card text-center border border-success info-card">
+                                <div class="icon-bg d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-bed card-icon"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Choose Stay</h5>
+                                    <p class="card-text">Effortlessly select from numerous hotel options for convenience.</p>
+                                    <a href="aboutus.html" class="btn btn-outline-success rounded-pill">More  <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xxl-2 mb-4">
+                            <div class="card text-center border border-success info-card">
+                                <div class="icon-bg d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-comments card-icon"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Help</h5>
+                                    <p class="card-text">Our support center is available for your questions and concerns.</p>
+                                    <a href="aboutus.html" class="btn btn-outline-success rounded-pill">More  <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid accept">
+                <div class="d-flex align-items-center justify-content-center mb-5" style="height: 100px;">
+                    <h2 class="text-center mt-5 mb-3">Accept With</h2>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-3 col-md-3 col-lg-1 mb-4">
+                        <img src="travel-photo/logo/kpay.jpg" class="payment-img img-fluid" alt="kpay">
+                    </div>
+                    <div class="col-3 col-md-3 col-lg-1 mb-4">
+                        <img src="travel-photo/logo/wave.jpg" class="payment-img img-fluid" alt="wave">
+                    </div>
+                    <div class="col-3 col-md-3 col-lg-1 mb-4">
+                        <img src="travel-photo/logo/CBPay.jpg" class="payment-img img-fluid" alt="cbpay">
+                    </div>
+                    <div class="col-3 col-md-3 col-lg-1 mb-4">
+                        <img src="travel-photo/logo/UAB.jpeg" class="payment-img img-fluid" alt="uab">
+                    </div>
+                    <div class="col-3 col-md-3 col-lg-1 mb-4">
+                        <img src="travel-photo/logo/mab.jpg" class="payment-img img-fluid" alt="mab">
+                    </div>
+                    <div class="col-3 col-md-3 col-lg-1 mb-4">
+                        <img src="travel-photo/logo/jcb.jpg" class="payment-img img-fluid" alt="jcb">
+                    </div>
+                    <div class="col-3 col-md-3 col-lg-1 mb-4">
+                        <img src="travel-photo/logo/master.png" class="payment-img img-fluid" alt="mastercard">
+                    </div>
+                    <div class="col-3 col-md-3 col-lg-1 mb-4">
+                        <img src="travel-photo/logo/aya.jpg" class="payment-img img-fluid" alt="aya">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mb-3" id="contact">
+            <div class="mb-2 mt-5" style="height: 100px;">
+                <h2 class="text-center">Contact Us</h2>
+                <h5 class="text-center mt-2">Is there anything we can do for you?</h5>
+            </div>
+            <div class="container-fluid row">
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card d-flex align-items-center justify-content-center">
+                        <img src="travel-photo/logo/phone.png" class="contact-img img-fluid mt-4" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text mb-4">Contact with Call</p>
+                            <p class="card-text mb-4">09789101112</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card d-flex align-items-center justify-content-center">
+                        <img src="travel-photo/logo/messenger.png" class="contact-img img-fluid mt-4" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Contact with Messenger</p>
+                            <a href="https://m.me/t.htike.7" class="btn btn-success mb-4">Messenger</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card d-flex align-items-center justify-content-center">
+                        <img src="travel-photo/logo/viber.png" class="contact-img img-fluid mt-4" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Contact with Viber</p>
+                            <a href="viber://chat?number=%2B959671159847" class="btn btn-success mb-4">Viber</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card d-flex align-items-center justify-content-center">
+                        <img src="travel-photo/logo/telegram.png" class="contact-img img-fluid mt-4" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Contact with Telegram</p>
+                            <a href="https://t.me/happy_travel_telegram" class="btn btn-success mb-4">Telegram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid green-bg">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-3 m-3">
+                    <h3 class="text-warning fw-bolder">Happy Travel</h3><br>
+                    <p class="text-white">Serve with love.<br>Thanks for choosing us. <br>Enjoy your Travel Plan with us.</p>
+                    <p class="text-warning"><i class="fa-solid fa-at"></i><a href="mailto:someone@example.com" class="text-decoration-none text-warning">: happytravel@gmail.com</a></p>
+                </div>
+                <div class="col-12 col-md-3 m-3 p-2">
+                    <h5 class="mt-3 text-warning fw-bold mb-4">QUICK LINKS</h5>
+                    <a href="#home" class="ft-link">Home</a><br>
+                    <a href="#bus" class="ft-link">Choose Bus</a><br>
+                    <a href="#hotel" class="ft-link">Choose Stay</a><br>
+                    <a href="#about" class="ft-link">About</a><br>
+                    <a href="#contact" class="ft-link">Contact Us</a>
+                </div>
+                <div class="col-12 col-md-3 m-3 p-2">
+                    <h5 class="mt-3 text-warning fw-bold mb-4">LEGAL</h5>
+                    <a href="#" class="ft-link">Terms & Conditions</a><br>
+                    <a href="#" class="ft-link">Privacy Policy</a><br>
+                    <p class="text-warning mt-4">
+                        <a href="tel:+959671159847" class="text-warning"><i class="fa-solid fa-square-phone ft-icon"></i></a>
+                        <a href="https://m.me/t.htike.7" class="text-warning"><i class="fa-brands fa-facebook-messenger ft-icon"></i></a>
+                        <a href="viber://chat?number=%2B959671159847" class="text-warning"><i class="fa-brands fa-viber ft-icon"></i></a>
+                        <a href="https://t.me/happy_travel_telegram" class="text-warning"><i class="fa-brands fa-telegram ft-icon"></i></a>
+                    </p>
+                </div>
+            </div>
+            <hr style="height:3px">
+            <footer class="text-center pb-4">
+                <small class="text-white">Copyright © Happy Travel. 2024 All Rights Reserved</small>
+            </footer>
+        </div>        
+    </div>
+</body>
+    <script src="library/jquery/jquery.js"></script>
+    <script src="library/momentjs/moment.min.js"></script>
+    <script src="library/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="library/fontawesome/js/fontawesome.js"></script>
+    <script src="library/fontawesome/js/solid.js"></script>
+    <script src="library/fontawesome/js/brands.js"></script>
+    <script src="library/daterangepicker/daterangepicker.js"></script>
+    <script src="script.js"></script>
+
+</html>

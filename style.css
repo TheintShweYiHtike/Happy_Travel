@@ -1,0 +1,154 @@
+
+    * {
+        box-sizing: border-box;
+    }
+    body, html {
+        height: 100%; 
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navbar{
+        background-color:#004c4c;
+    }
+    .navbar .navbar-brand{
+        color: #FFD700;
+        font-size: 1.7rem;
+    }
+    .navbar .navbar-nav .nav-link{
+        color: #FFD700;
+    }
+    .navbar .nav-link:hover {
+        color: #FFA500 !important;
+    }
+    .navbar .nav-link.active {
+        color: #FFA500 !important;
+        background-color: #077070; 
+        font-weight: bold; 
+        border-radius: 5px; 
+    }
+    .home{
+        background: url(/travel-photo/bagan.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .overlay {
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .green-bg{
+        background-color:#004c4c;
+    }
+
+    .hotelbg{
+        background-image: linear-gradient(to bottom, #004c4c, #FFD700 ); 
+    }
+    
+    .room-input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem; 
+        padding: 0.375rem 0.75rem; 
+        width: auto; 
+        height: auto; 
+        box-sizing: border-box; 
+    }
+
+    .room-input button {
+        background: none;
+        border: none;
+        color: #999;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 0 10px; 
+    }
+
+    .room-input span {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    .city-card{
+        height: 200px; 
+        object-fit: cover; 
+        overflow: hidden;
+        transition: transform 0.3s ease;
+
+    }
+    .city-card:hover{
+        transform: scale(1.1);    
+    }
+    .txtonimg{
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0); 
+        background: rgba(0, 0, 0, 0.5); 
+        color: #f1f1f1;
+        width: 100%;
+        padding: 10px;
+    }
+    .about-bg{
+        background-image: linear-gradient(to bottom, #FFD700 0.5%, #fff 20%); 
+    }
+    .bus-bg{
+        background-image: linear-gradient(to bottom, #050000, #004c4c); 
+    }
+    
+    .icon-bg {
+        background-color: #ffe552; 
+        border-radius: 50%; 
+        width: 60px; 
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 12px;
+    }
+    .card-icon {
+        font-size: 30px;
+        color: #015b5b; 
+        margin-top: 12px;
+        margin-bottom: 15px;
+    }
+    .info-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .payment-img{
+        height: 80px;
+        object-fit: cover;
+    }
+    .contact-img{
+        width: 65px;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 12px;
+        margin-bottom: 15px;
+    }
+    .ft-icon{
+        font-size: 25px;
+        margin-inline-end: 7px;
+    }
+    .ft-icon:hover{
+        color: #7d7b75;
+    }
+    .ft-link{
+        text-decoration: none;
+        color: white;
+    }
+    .ft-link:hover{
+        color: #FFD700;
+    }
+    
+    
